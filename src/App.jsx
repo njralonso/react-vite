@@ -1,15 +1,15 @@
 import Search from "./components/Search";
 import Header from "./components/Header";
-import Anime from "./components/Anime";
-import Card from "./components/Card";
+import List from "./components/Anime";
+import Click from "./components/Button";
 
 function App() {
   return (
     <>
       <Header />
       <Search />
-      <Anime name="86 Eighty Six" />
-      <Card/>
+      <List />
+      <Click />
     </>
   );
 }
