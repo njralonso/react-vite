@@ -16,5 +16,11 @@ export const animes = [
     name: "86 Eighty Six",
     // caps: 24,
     // tags: ["Acción", "Mecha", "Romance"]
+  },
+  {
+    key: 4,
+    name: "Yagate Kimi Ni Naru",
+    // caps: 1060,
+    // tags: ["Acción", "Aventura", "Más"]
   }
 ];

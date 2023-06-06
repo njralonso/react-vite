@@ -1,15 +1,14 @@
-import Search from "./components/Search";
 import Header from "./components/Header";
-import List from "./components/Anime";
-import Click from "./components/Button";
-
+import ListaDeCosas from "./components/ItemsList";
+import TabComponent from "./components/TabComponent";
+import Tasks from "./components/TodoList";
 function App() {
   return (
     <>
       <Header />
-      <Search />
-      <List />
-      <Click />
+      <TabComponent />
+      <ListaDeCosas />
+      {/* <Tasks /> */}
     </>
   );
 }
