@@ -35,7 +35,7 @@ export function ApiRequest() {
 
 export default function AnimeCard({ title, image, description }) {
   return (
-    <sect className="px-4 my-4">
+    <div className="px-4 my-4">
       <div className="p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#" className="block">
           <img className="rounded-t-lg w-1/4 mx-auto" src={image} alt={title} />
@@ -49,6 +49,6 @@ export default function AnimeCard({ title, image, description }) {
           </div>
         </a>
       </div>
-    </sect>
+    </div>
   );
 }

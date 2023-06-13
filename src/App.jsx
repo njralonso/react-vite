@@ -7,6 +7,8 @@ import { Watching } from "./pages/Watching";
 import { Favorites } from "./pages/Favorites";
 import { Later } from "./pages/Later";
 import { NullPath } from "./pages/404";
+import { AnimeRoutes } from "./pages/AnimesPage";
+import { AnimeInfo } from "./pages/AnimeInfo";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/watching" element={<Watching />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/later" element={<Later />} />
+          <Route path="/animes" element={<AnimeRoutes />} />
+          <Route path="/animes/:name" element={<AnimeInfo />} />
           <Route path="/redirect" element={<Navigate to="/404" />} />
           <Route path="*" element={<NullPath />} />
         </Routes>

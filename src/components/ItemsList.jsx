@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function ListaDeCosas() {
   const [value, setValue] = useState("");
@@ -44,7 +45,7 @@ function InputComponent({ handleEvent }) {
   );
 }
 
-function AnimeInformationComponent({ index, anime }) {
+export function AnimeInformationComponent({ index, anime }) {
   return (
     <li key={index} className="bg-red-300 font-semibold my-3 rounded-md">
       <a href="" className="p-2 block">

@@ -5,6 +5,7 @@ export default function TabComponent() {
     { href: "/watching", name: "Viendo" },
     { href: "/favorites", name: "Favoritos" },
     { href: "/later", name: "Ver luego" },
+    { href: "/animes", name: "animes" },
   ];
 
   return (
