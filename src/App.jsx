@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ApiRequest } from "./components/Fetch";
-import Header from "./components/Header";
+import HeaderAnime from "./components/Header";
 import ListaDeCosas from "./components/ItemsList";
 import TabComponent from "./components/TabComponent";
 import { Watching } from "./pages/Watching";
@@ -9,14 +9,15 @@ import { Later } from "./pages/Later";
 import { NullPath } from "./pages/404";
 import { AnimeRoutes } from "./pages/AnimesPage";
 import { AnimeInfo } from "./pages/AnimeInfo";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <TabComponent />
+        {/* <TabComponent /> */}
         <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
+          <Route path="/" element={<Home/>} />
           <Route path="/watching" element={<Watching />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/later" element={<Later />} />
@@ -26,9 +27,9 @@ function App() {
           <Route path="*" element={<NullPath />} />
         </Routes>
       </BrowserRouter>
-      <Header />
+      {/* <HeaderAnime />
       <ListaDeCosas />
-      <ApiRequest />
+      <ApiRequest /> */}
     </>
   );
 }

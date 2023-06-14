@@ -1,3 +1,5 @@
-export function Favorites(){
-    return <h1>Favorites</h1>
+import Layout from "../components/layout/Layout";
+
+export function Favorites() {
+  return <Layout>Favorites</Layout>;
 }

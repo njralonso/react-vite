@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function TabComponent() {
   const tabs = [
+    { href: "/", name: "Home" },
     { href: "/watching", name: "Viendo" },
     { href: "/favorites", name: "Favoritos" },
     { href: "/later", name: "Ver luego" },
@@ -11,7 +12,7 @@ export default function TabComponent() {
   return (
     <>
       <nav>
-        <Link to="/redirect">Redirect</Link>
+        {/* <Link to="/redirect">Redirect</Link> */}
         <ul className="flex justify-center text-sm font-medium text-center text-gray-500 dark:text-gray-400 my-2 px-4">
           {tabs.map((tab, index) => (
             <li key={index}>

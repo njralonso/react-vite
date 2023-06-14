@@ -1,3 +1,5 @@
-export function Later(){
-    return <h1>Queue to watch</h1>
+import Layout from "../components/layout/Layout";
+
+export function Later() {
+  return <Layout>Later</Layout>;
 }

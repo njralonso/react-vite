@@ -1,3 +1,5 @@
-export function Watching(){
-    return <h1>Currently watching</h1>
+import Layout from "../components/layout/Layout";
+
+export function Watching() {
+  return <Layout>Viendo</Layout>;
 }
