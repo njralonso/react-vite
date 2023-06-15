@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 
 export function AnimeInfo() {
-  console.log(useParams());
+  console.log(useParams(), "nota: Hook useParams");
   const { name } = useParams();
 
   const navigate = useNavigate()

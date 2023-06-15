@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     <>
       <div className="web-container flex flex-col justify-between h-screen">
         <Header />
-        <main>{children}</main>
+        <main className="mx-4">{children}</main>
         <Footer />
       </div>
     </>
