@@ -1,13 +1,11 @@
 import Layout from "../components/layout/Layout";
-import { ApiRequest } from "../components/Fetch";
-import InputSearch from "../components/InputSearch";
+import AnimeList from "../components/AnimeList";
 
 export function Home() {
   return (
     <Layout>
       <section>
-        {/* <InputSearch/> */}
-        <ApiRequest />
+        <AnimeList url={"https://api.jikan.moe/v4/anime"}/>
       </section>
     </Layout>
   );
