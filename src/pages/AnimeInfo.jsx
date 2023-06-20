@@ -23,12 +23,12 @@ export function AnimeProfileInformation() {
 
       // Anime episodes
       const episodes = data.episodes
-      const episodesList = episodes => { 
-         for (let episodesList = 0; episodesList < episodes; episodesList++) {
-            <li>episodesList {episodesList}</li>
-         }
+      const episodesList = []
+      for (let i = 1; i <= episodes; i++) {
+         episodesList.push(i)
+         console.log(i)
       }
-      episodesList(episodes)
+
       // Category type [Anime, manga, ova, etc]
       // const type = data.demographics
       // const typeList = type.map((type) => type.type)
@@ -63,8 +63,10 @@ export function AnimeProfileInformation() {
                      </div>
                   </div>
                </div>
-               <div>
-
+               <div className="px-4">
+                  {episodesList.map((episode, i) =>{
+                    return( <div className="border p-2 border-black rounded-md shadow-md my-2" key={i}>{animeTitle} {episode}</div>)
+                  })}
                </div>
             </div>
          </>
