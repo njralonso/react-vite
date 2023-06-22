@@ -6,7 +6,7 @@ import useRequest from "../hooks/useRequest";
 export default function AnimeList({ url }) {
   const { data, loading, error } = useRequest(url)
   const [value, setValue] = useState(null)
-
+console.log(data)
   function handleKeyUp(e) {
     setValue(e.target.value)
   }
