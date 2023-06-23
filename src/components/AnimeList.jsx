@@ -5,11 +5,13 @@ import useRequest from "../hooks/useRequest";
 
 export default function AnimeList({ url }) {
   const { data, loading, error } = useRequest(url)
-  const [value, setValue] = useState(null)
-console.log(data)
+  const [value, setValue] = useState(null) 
+
   function handleKeyUp(e) {
     setValue(e.target.value)
   }
+
+
 
   // Validación de objeto no vacío para que la app no se rompa
   if (data !== null) {
